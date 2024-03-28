@@ -1,1 +1,1 @@
-python detect.py --weights yolov9-e.pt --source 0 
+python detect.py --weights yolov9-e.pt --source 0 --view-img
