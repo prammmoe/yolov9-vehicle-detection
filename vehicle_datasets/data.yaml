@@ -1,0 +1,6 @@
+# path: ../vehicle_datasets
+train: ../vehicle_datasets/train/images
+val: ../vehicle_datasets/valid/images
+
+nc: 1
+names: ['Vehicle']
