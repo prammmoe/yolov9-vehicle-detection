@@ -321,3 +321,17 @@ python caption/train.py --workers 8 --device 0 --batch 32  --data coco.yaml --im
 * [https://github.com/meituan/YOLOv6](https://github.com/meituan/YOLOv6)
 
 </details>
+
+## Object Tracking Using DeepSORT
+
+# Run object tracking
+python object_tracking.py --video ./data/test.mp4 --output ./output/output.mp4
+
+# Run object tracking on webcam (set video flag to 0)
+python object_tracking.py --video 0 --output ./output/webcam.mp4
+
+# Run person tracking (set class_id flag to 0 for person)
+python object_tracking.py --video ./data/test.mp4 --output ./output/output.mp4 --class_id 0
+
+# Run tracking on a video with burring certain objects (set blur_id flag to 0 for person)
+python object_tracking.py --video ./data/test.mp4 --output ./output/output.mp4 --blur_id 0
