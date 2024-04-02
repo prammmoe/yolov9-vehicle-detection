@@ -99,6 +99,7 @@ def run(
 
         # NMS
         with dt[2]:
+            pred = pred[0][1] if isinstance(pred[0], list) else pred[0]
             pred = non_max_suppression(pred, conf_thres, iou_thres, classes, agnostic_nms, max_det=max_det)
 
         # Second-stage classifier (optional)
@@ -222,7 +223,7 @@ def parse_opt():
 
 
 def main(opt):
-    # check_requirements(exclude=('tensorboard', 'thop'))
+    check_requirements(exclude=('tensorboard', 'thop'))
     run(**vars(opt))
 
 
