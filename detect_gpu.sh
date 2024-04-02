@@ -1,1 +1,1 @@
-python detect_dual.py --source './data/images/' --img 640 --device 0 --weights './yolov9-e.pt' --name yolov9_c_640_detect
+python detect.py --source './data/images/' --img 640 --device 0 --weights './yolov9-e.pt' --name yolov9_c_640_detect
